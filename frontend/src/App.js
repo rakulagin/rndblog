@@ -1,9 +1,15 @@
+import Header from "./components/Header/Header";
+
+import {Container} from "@mui/material";
+
 function App() {
     return (
-        <div className="App">
-            1212
-
-        </div>
+        <>
+            <Header/>
+            <Container maxWidth={"xl"}>
+                123
+            </Container>
+        </>
     );
 }
 
