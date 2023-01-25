@@ -1,4 +1,5 @@
 import React from "react"
+import { Link as RouterLink} from 'react-router-dom';
 
 import styles from "./Header.module.scss"
 
@@ -14,19 +15,19 @@ const Header = () => {
                 <Container maxWidth={"xl"}>
                     <div className={styles.wrp}>
                         <div>
-                            <Button href="/" size="large" color="secondary" variant="text">HOME /</Button>
+                            <Button component={RouterLink} to="/" size="large" color="secondary" variant="text">HOME /</Button>
                         </div>
                         <div>
                             <ButtonGroup>
                                 {isAuth ? (
                                     <>
-                                        <Button href="/" variant="outlined" color="secondary">Написать статью</Button>
-                                        <Button href="/" variant="contained" color="primary">Выйти</Button>
+                                        <Button component={RouterLink} to="/" variant="outlined" color="secondary">Написать статью</Button>
+                                        <Button component={RouterLink} to="/" variant="contained" color="primary">Выйти</Button>
                                     </>
                                 ) : (
                                     <>
-                                        <Button href="/" variant="contained" color="primary">Войти</Button>
-                                        <Button href="/" variant="outlined" color="secondary">Создать аккаунт</Button>
+                                        <Button component={RouterLink} to="/login" variant="contained" color="primary">Войти</Button>
+                                        <Button component={RouterLink} to="/register" variant="outlined" color="secondary">Создать аккаунт</Button>
                                     </>
                                 )}
                             </ButtonGroup>
