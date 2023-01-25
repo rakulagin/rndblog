@@ -1,8 +1,10 @@
 import Header from "./components/Header/Header";
 
 import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
 
 import {Container} from "@mui/material";
+
 
 
 function App() {
@@ -10,7 +12,8 @@ function App() {
         <>
             <Header/>
             <Container maxWidth={"xl"}>
-                <Login/>
+                {/*<Login/>*/}
+                <Registration/>
             </Container>
         </>
     );
