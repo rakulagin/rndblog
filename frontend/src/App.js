@@ -5,6 +5,9 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./pages/Login/Login";
 import Registration from "./pages/Registration/Registration";
 import Home from "./pages/Home/Home";
+import FullPost from "../src/pages/FullPost/FullPost"
+
+
 
 import {Container} from "@mui/material";
 
@@ -19,6 +22,7 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/register" element={<Registration/>}/>
+                    <Route path="/post" element={<FullPost/>}/>
                 </Routes>
             </Container>
         </>
