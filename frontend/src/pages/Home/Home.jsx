@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-        {!isPostLoaded ? <p>home page</p> : (
+        {!isPostLoaded ? <h1>loading home page</h1> : (
             posts.items.map((obj, index) => (
                 <p key={index}>{obj.title}</p>
             ))
