@@ -9,7 +9,7 @@ export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
 const initialState = {
     posts: {
         items: [],
-        status: ''
+        status: 'loading'
     },
     // tags: {
     //     items: [],
